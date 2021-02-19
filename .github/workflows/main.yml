@@ -18,10 +18,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Check out tieraid-app
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
         with:
           repository: tieraid-app/tieraid-app.github.io
           token: ${{ secrets.sync_pat }}
+          ref: refs/heads/main
           
       - name: Deploy to GitHub Pages
         if: success()
