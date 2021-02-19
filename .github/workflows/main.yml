@@ -24,6 +24,12 @@ jobs:
           token: ${{ secrets.sync_pat }}
           ref: refs/heads/main
           
+      # Runs a single command using the runners shell
+      - name: Clean install dependencies and build
+        run: |
+          yarn install --frozen-lockfile
+          yarn build
+          
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
