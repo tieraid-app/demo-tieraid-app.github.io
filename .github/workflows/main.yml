@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Checkout tieraid-app
+name: Sync tieraid app
 
 # Controls when the action will run. 
 on:
@@ -17,7 +17,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@master
+      - name: Check out tieraid-app
+        uses: actions/checkout@master
         with:
-          name: tieraid-app/tieraid-app.github.io
+          repository: tieraid-app/tieraid-app.github.io
           token: ${{ secrets.sync_pat }}
