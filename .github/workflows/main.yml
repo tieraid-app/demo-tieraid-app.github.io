@@ -22,3 +22,12 @@ jobs:
         with:
           repository: tieraid-app/tieraid-app.github.io
           token: ${{ secrets.sync_pat }}
+          
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
