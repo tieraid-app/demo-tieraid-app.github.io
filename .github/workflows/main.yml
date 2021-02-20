@@ -26,7 +26,6 @@ jobs:
           ref: refs/heads/gh-pages
           
       - name: Deploy to GitHub Pages
-        if: success()
         uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
