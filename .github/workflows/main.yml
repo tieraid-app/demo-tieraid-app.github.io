@@ -17,24 +17,17 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Check out tieraid-app
+      - name: Clone github pages of root tieraid
         uses: actions/checkout@v2
         with:
           repository: tieraid-app/tieraid-app.github.io
           token: ${{ secrets.sync_pat }}
-          ref: refs/heads/main
-          
-      # Runs a single command using the runners shell
-      - name: Clean install dependencies and build
-        run: |
-          yarn install --frozen-lockfile
-          yarn build
+          ref: refs/heads/gh-pages
           
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
-          build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
