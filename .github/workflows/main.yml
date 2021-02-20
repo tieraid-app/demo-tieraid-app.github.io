@@ -4,6 +4,11 @@ name: Sync tieraid app
 
 # Controls when the action will run. 
 on:
+
+  # Schedule a build every 5 minutes to check if changes has been done
+  schedule:
+    - cron:  '*/5 * * * *'
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
