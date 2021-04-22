@@ -32,7 +32,7 @@ jobs:
       - name: Clean install dependencies and build
         run: |
           yarn install --frozen-lockfile
-          yarn build
+          yarn build --DOMAIN=https://tieraid.herokuapp.com/
           yarn cname demo.tieraid.app
           
       - name: Deploy to GitHub Pages
