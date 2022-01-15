@@ -27,13 +27,29 @@ jobs:
           repository: tieraid-app/tieraid-app.github.io
           token: ${{ secrets.sync_pat }}
           ref: main
+      
+      - name: Setup CNAME record (for github pages to work)
+        run: |
+          cat << EOF > public/CNAME
+          demo.tieraid.app
+          EOF
+          
+      - name: Setup environment variables
+        run: |
+          cat << EOF > .env.production
+          PUBLIC_URL=www.tieraid.app
+          BACKEND_URL=https://tieraid.herokuapp.com/
+          EOF
           
       # Runs a single command using the runners shell
-      - name: Clean install dependencies and build
+      - name: Install dependencies 
+        run: |          
+          npm ci
+          
+      - name: Test and build
         run: |
-          yarn install --frozen-lockfile
-          yarn build --DOMAIN=https://tieraid.herokuapp.com/
-          yarn cname demo.tieraid.app
+          npm test
+          npm run build
           
       - name: Deploy to GitHub Pages
         if: success()
