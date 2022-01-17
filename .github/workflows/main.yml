@@ -37,7 +37,6 @@ jobs:
       - name: Setup environment variables
         run: |
           cat << EOF > .env.production
-          PUBLIC_URL=demo.tieraid.app
           BACKEND_URL=https://tieraid.herokuapp.com/
           EOF
           
