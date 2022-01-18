@@ -38,7 +38,7 @@ jobs:
         run: |
           cat << EOF > .env.production
           REACT_APP_BACKEND_URL=https://tieraid.herokuapp.com/
-          REACT_APP_ROUTER_BASENAME=demo.tieraid.app/?/
+          REACT_APP_ROUTER_BASENAME=demo.tieraid.app/?
           EOF
           
       # Runs a single command using the runners shell
