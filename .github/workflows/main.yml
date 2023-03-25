@@ -37,7 +37,7 @@ jobs:
       - name: Setup environment variables
         run: |
           cat << EOF > .env.production
-          REACT_APP_BACKEND_URL=https://tieraid.herokuapp.com/
+          REACT_APP_BACKEND_URL=http://demo.tieraid-app-backend-dev.eu-north-1.elasticbeanstalk.com
           EOF
           
       # Runs a single command using the runners shell
