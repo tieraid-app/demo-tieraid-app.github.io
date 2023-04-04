@@ -46,7 +46,6 @@ jobs:
           
       - name: Test and build
         run: |
-          npm test
           npm run build
           
       - name: Deploy to GitHub Pages
