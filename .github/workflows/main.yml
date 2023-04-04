@@ -36,7 +36,7 @@ jobs:
       - name: Setup environment variables
         run: |
           cat << EOF > .env.production
-          REACT_APP_BACKEND_URL=$BACKEND_URL
+          REACT_APP_BACKEND_URL=https://demo.tieraid.be
           EOF
           
       # Runs a single command using the runners shell
