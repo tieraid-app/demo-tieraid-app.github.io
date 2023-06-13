@@ -31,6 +31,12 @@ jobs:
           demo.tieraid.app
           EOF
           
+      - name: Setup environment variables
+        run: |
+          cat << EOF > .env.production
+          REACT_APP_BACKEND_URL=https://demo.tieraid.be
+          EOF
+          
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
