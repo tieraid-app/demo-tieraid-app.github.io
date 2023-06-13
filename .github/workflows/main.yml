@@ -27,7 +27,7 @@ jobs:
       
       - name: Setup CNAME record (for github pages to work)
         run: |
-          cat << EOF > public/CNAME
+          cat << EOF > CNAME
           demo.tieraid.app
           EOF
           
