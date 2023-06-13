@@ -11,9 +11,7 @@ on:
   repository_dispatch:
     types: [sync]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -25,21 +23,11 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: tieraid-app/tieraid-app.github.io
-          ref: main
+          ref: gh-pages
       
       - name: Setup CNAME record (for github pages to work)
         run: |
-          echo $CNAME > public/CNAME
-          
-      # Runs a single command using the runners shell
-      - name: Install dependencies 
-        run: |          
-          npm ci
-          
-      - name: Test and build
-        run: |
-          npm test
-          npm run build
+          echo demo.tieraid.app > public/CNAME
           
       - name: Deploy to GitHub Pages
         if: success()
