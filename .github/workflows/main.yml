@@ -29,7 +29,7 @@ jobs:
       
       - name: Setup CNAME record (for github pages to work)
         run: |
-          echo $CNAME > CNAME
+          echo $CNAME > public/CNAME
           
       # Runs a single command using the runners shell
       - name: Install dependencies 
