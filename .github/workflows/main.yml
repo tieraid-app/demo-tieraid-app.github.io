@@ -17,6 +17,8 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    env:
+        BACKEND: https://demo.tieraid.be
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -26,6 +28,12 @@ jobs:
         with:
           repository: tieraid-app/tieraid-app.github.io
           ref: main
+
+      - name: Fetch tenant information
+        uses: satak/webrequest-action@master
+        with:
+          url: $BACKEND/tenant/
+          method: GET
           
       - name: Setup environment variables
         run: |
