@@ -37,7 +37,7 @@ jobs:
           
       - name: Setup environment variables
         run: |
-          $info = '${{ steps.webhook.outputs.output }}' | ConvertFrom-Json
+          $output = '${{ steps.webhook.outputs.output }}' | ConvertFrom-Json
           cat << EOF > .env.production
           REACT_APP_BACKEND_URL=${{ env.BACKEND }}
           EOF
