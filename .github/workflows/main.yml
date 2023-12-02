@@ -31,12 +31,10 @@ jobs:
 
       - name: Fetch tenant information
         id: tenant
-        uses: octokit/request-action@v2.x
+        uses: fjogeleit/http-request-action@v1
         with:
-          route: GET ${{ env.BACKEND }}/info/
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          
+          url: ${{ env.BACKEND }}/info/
+
       - name: Setup environment variables
         run: |
           cat << EOF > .env.production
