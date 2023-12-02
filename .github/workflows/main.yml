@@ -38,6 +38,7 @@ jobs:
 
       - name: Setup environment variables
         run: |
+          echo ${{ steps.tenant.outputs.response }}
           cat << EOF > .env.production
           REACT_APP_BACKEND_URL=${{ env.BACKEND }}
           EOF
