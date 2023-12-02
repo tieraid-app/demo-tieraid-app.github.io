@@ -38,7 +38,6 @@ jobs:
           
       - name: Setup environment variables
         run: |
-          $output = '${{ steps.tenant.outputs.data }}' | ConvertFrom-Json
           cat << EOF > .env.production
           REACT_APP_BACKEND_URL=${{ env.BACKEND }}
           EOF
