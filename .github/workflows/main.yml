@@ -32,7 +32,7 @@ jobs:
       - name: Fetch tenant information
         uses: satak/webrequest-action@master
         with:
-          url: $BACKEND/tenant/
+          url: '${BACKEND}/tenant/'
           method: GET
           
       - name: Setup environment variables
