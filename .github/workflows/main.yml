@@ -31,10 +31,9 @@ jobs:
 
       - name: Fetch tenant information
         id: tenant
-        uses: satak/webrequest-action@master
+        uses: octokit/request-action@v2.x
         with:
-          url: ${{ env.BACKEND }}/info/
-          method: GET
+          route: GET ${{ env.BACKEND }}/info/
           
       - name: Setup environment variables
         run: |
