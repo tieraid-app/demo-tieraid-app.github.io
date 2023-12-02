@@ -34,6 +34,8 @@ jobs:
         uses: octokit/request-action@v2.x
         with:
           route: GET ${{ env.BACKEND }}/info/
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           
       - name: Setup environment variables
         run: |
