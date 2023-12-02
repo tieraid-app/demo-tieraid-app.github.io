@@ -30,6 +30,7 @@ jobs:
           ref: main
 
       - name: Fetch tenant information
+        id: tenant
         uses: satak/webrequest-action@master
         with:
           url: ${{ env.BACKEND }}/info/
@@ -37,7 +38,7 @@ jobs:
           
       - name: Setup environment variables
         run: |
-          $output = '${{ steps.webhook.outputs.data }}' | ConvertFrom-Json
+          $output = '${{ steps.tenant.outputs.data }}' | ConvertFrom-Json
           cat << EOF > .env.production
           REACT_APP_BACKEND_URL=${{ env.BACKEND }}
           EOF
