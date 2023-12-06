@@ -41,6 +41,7 @@ jobs:
           cat << EOF > .env.production
           REACT_APP_BACKEND_URL=${{ env.BACKEND }}
           REACT_APP_COMPANY_NAME=${{fromJson(steps.tenant.outputs.response).name}}
+          REACT_APP_WEBSITE_NAME=${{fromJson(steps.tenant.outputs.response).name}} | Powered by Tieraid
           EOF
           
       - name: Install dependencies 
