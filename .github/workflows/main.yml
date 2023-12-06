@@ -33,7 +33,7 @@ jobs:
         id: tenant
         uses: fjogeleit/http-request-action@v1
         with:
-          url: ${{ env.BACKEND }}/info/
+          url: ${{ env.BACKEND }}/tenant/info/
           method: 'GET'
 
       - name: Setup environment variables
