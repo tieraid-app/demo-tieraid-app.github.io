@@ -26,7 +26,7 @@ jobs:
       - name: Clone github pages of root tieraid
         uses: actions/checkout@v3
         with:
-          repository: tieraid-app/tieraid-app.github.io
+          repository: tieraid-app/tieraid-app-frontend
           ref: main
 
       - name: Fetch tenant information
