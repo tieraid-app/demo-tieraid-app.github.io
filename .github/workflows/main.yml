@@ -39,9 +39,9 @@ jobs:
       - name: Setup environment variables
         run: |
           cat << EOF > .env.production
-          REACT_APP_BACKEND_URL=${{ env.BACKEND }}
-          REACT_APP_COMPANY_NAME=${{fromJson(steps.tenant.outputs.response).name}}
-          REACT_APP_WEBSITE_NAME=${{fromJson(steps.tenant.outputs.response).name}} | Powered by Tieraid
+          VITE_BACKEND_URL=${{ env.BACKEND }}
+          VITE_COMPANY_NAME=${{fromJson(steps.tenant.outputs.response).name}}
+          VITE_WEBSITE_NAME=${{fromJson(steps.tenant.outputs.response).name}} | Powered by Tieraid
           EOF
           
       - name: Install dependencies 
@@ -58,7 +58,7 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: gh-pages
-          build_dir: build
+          build_dir: dist
           fqdn: ${{fromJson(steps.tenant.outputs.response).fqdn}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
