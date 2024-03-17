@@ -28,7 +28,7 @@ jobs:
         with:
           repository: tieraid-app/tieraid-app-frontend
           ref: main
-          ssh-key: ${{ secrets.CLONE }}
+          ssh-key: ${{ secrets.CLONE_TIERAID_FRONTEND_PUB_KEY }}
 
       - name: Fetch tenant information
         id: tenant
