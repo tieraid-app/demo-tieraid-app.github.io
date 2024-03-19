@@ -18,3 +18,4 @@ jobs:
     uses: tieraid-app/.github/.github/workflows/deploy-tenant.yml@main
     with:
       backend-url: https://demo.tieraid.be
+    secrets: inherit
