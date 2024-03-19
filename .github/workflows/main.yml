@@ -16,3 +16,5 @@ jobs:
   # This workflow contains a single job called "build"
   build-and-deploy:
     uses: tieraid-app/tieraid-app-frontend/.github/workflows/deploy-tenant.yml@main
+    with:
+      ssh-key: ${{ secrets.CLONE_FRONTEND_KEY }}
