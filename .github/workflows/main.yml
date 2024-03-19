@@ -14,5 +14,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build-and-deploy:
+  deploy:
     uses: tieraid-app/.github/.github/workflows/deploy-tenant.yml@main
+    with:
+      backend-url: https://demo.tieraid.be
