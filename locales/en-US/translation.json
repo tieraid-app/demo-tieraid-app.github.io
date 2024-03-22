@@ -1,0 +1,508 @@
+{
+  "404": {
+    "description": "Sorry, we couldn’t find the page you’re looking for. Perhaps you’ve mistyped the URL? Be sure to check your spelling.",
+    "goBack": "Go back inside",
+    "title": "Oops, page not found!"
+  },
+  "account": {
+    "currentPassword": "Current password",
+    "newPassword": "Choose new password",
+    "newPasswordEmptyError": "Your password cannot be empty",
+    "newPasswordError": "Your new password cannot be the same as your old password",
+    "verifyNewPassword": "Verify new password",
+    "verifyPasswordError": "Your new password does not match with the confirm password"
+  },
+  "activateUser": {
+    "activateAccount": "Activate Account",
+    "activateAccountSuccessMessage": "Your account has been activated. You will now be redirected to the login page.",
+    "activateAccountSuccessTitle": "Successful Activation!",
+    "activateUserSubTitle": "Enter your details to activate your account",
+    "activateUserTitle": "Let's Begin - Activate Your Account",
+    "generalActivateAccountError": "This account cannot be activated at the moment. Please try again later.",
+    "invalidUuidError": "This account cannot be activated. Please check the link or request a new one.",
+    "welcomeUser": "Hi, Welcome to Activate Your Account and Get Started"
+  },
+  "address": {
+    "address": "Postal address",
+    "adress_line": "Delivery Address",
+    "city": "City",
+    "co": "c/o",
+    "zipCode": "Zip code"
+  },
+  "cart": {
+    "addToCart": "Add to cart",
+    "cart": "Your Shopping Cart ({{ totalItems }})",
+    "contactDetails": "Contact details",
+    "empty": "Your inventory is empty"
+  },
+  "category": {
+    "category": "Category",
+    "createDialogText": "Create category",
+    "createDialogTitle": "Create new category",
+    "deleteDialogText": "Are you sure you want to delete this item?",
+    "deleteDialogTitle": "Confirm delete",
+    "updateDialogText": "",
+    "updateDialogTitle": ""
+  },
+  "checkout": {
+    "acceptedTermsAndCondition": "I agree to the terms and conditions",
+    "address": "Street address",
+    "careOf": "Street address (c/o)",
+    "checkout": "Checkout",
+    "checkoutButton": "Submit Order",
+    "city": "City",
+    "country": "Country",
+    "defaultErrorMessage": "Unfortunately order can not be placed, please try again later.",
+    "defaultErrorTitle": "Order failed",
+    "description": "Additional details about the order",
+    "email": "Email",
+    "name": "Full Name",
+    "orderConfirmation": "Your order is confirmed",
+    "orderConfirmationDetail": "Thank you for your order, you will be receiving a confirmation email with order details.",
+    "orderNumberText": "Your order number is #{{orderNumber}}",
+    "orderOverview": "View order details",
+    "postalCode": "Zip",
+    "productErrorMessage": "This applies to product {{productName}}"
+  },
+  "company": {
+    "addressLabel": "Addresses",
+    "company": "Company",
+    "companyUpdateError": "Unfortunately, the company information can not be updated, please try again later.",
+    "companyUpdateSuccess": "Company information updated successfully",
+    "companyUpdateSuccessHeading": "Success",
+    "description": "Company Description",
+    "email": "Company email",
+    "emailHelperText": "This email is used internally for all communication from tieraid",
+    "emptyCompanyAddress": "Company address is required",
+    "emptyCompanyName": "Company name is required",
+    "emptyOrganisationNumber": "Organization number is required",
+    "invalidCompanyAddress": "Street name and number is required",
+    "invalidOrganisationNumber": "Organization number is invalid, format 771122-1234",
+    "invoiceAddress": "Company invoice address",
+    "invoiceCheckbox": "Company address is the same as the invoice address",
+    "name": "Company Name",
+    "number": "Organization number",
+    "orderFrom": "Order from"
+  },
+  "contact": {
+    "email": "Email",
+    "firstName": "Firstname",
+    "lastName": "Lastname",
+    "telephone": "Mobile number"
+  },
+  "country": {
+    "denmark": "Denmark",
+    "finland": "Finland",
+    "norway": "Norway",
+    "sweden": "Sweden"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "todoCheckBox": "Done",
+    "todoErrorMessage": "Unfortunately, todo could not be updated. Please try again later.",
+    "todoTitle": "Tasks to Complete:",
+    "welcome": "Hi, Welcome back {{user}}"
+  },
+  "feedback": {
+    "confirmation": "Your feedback has been submitted",
+    "description": "Description",
+    "goBack": "Submit another feedback",
+    "leaveFeedback": "Leave your feedback",
+    "title": "Feedback",
+    "type": "Select type",
+    "type_bug": "Bug",
+    "type_feature": "Feature",
+    "type_improvement": "Improvement",
+    "type_support": "Support"
+  },
+  "general": {
+    "active": "Active",
+    "addressMaxLength": "Address line is too long, try to shorten it (max 50 characters)",
+    "addressRequiredMessage": "Address is required",
+    "cancel": "Cancel",
+    "choose": "Choose",
+    "cityRequiredMessage": "City is required",
+    "companyMaxLength": "Company name is too long (max 50 characters)",
+    "count": "Quantity: {{count}} piece",
+    "countPackage": "Antal: {{count}} package",
+    "countPackage_plural": "Antal: {{count}} packages",
+    "count_plural": "Quantity: {{count}} pieces",
+    "create": "Create",
+    "delete": "Delete",
+    "descriptionMinLengthMessage": "Description must be at least {{count}} characters",
+    "descriptionMinLengthMessage_plural": "",
+    "descriptionRequiredMessage": "Please enter a description",
+    "edit": "Edit",
+    "email": "Email address",
+    "emailInvalidMessage": "Email must be a valid email address",
+    "emailRequiredMessage": "Email is required",
+    "errorDefaultMessage": "Unfortunately, we have technical issues, please try again later.",
+    "forgotPasswordDescription": "Enter your mail to reset the password",
+    "forgotPasswordMessage": "Forgot password?",
+    "forgotPasswordResetButton": "Reset",
+    "fullNameRequiredMessage": "Full Name is required",
+    "goTo": "To",
+    "loginButton": "Login",
+    "loginErrorMessage": "Incorrect email or password",
+    "logout": "Logout",
+    "name": "Name",
+    "new": "New",
+    "otherAccounts": "View accounts",
+    "password": "Password",
+    "passwordNotMatchingMessage": "Password does not match",
+    "passwordRequiredMessage": "Password is required",
+    "passwordVerify": "Verify password",
+    "phoneInvalidMessage": "Invalid phone number. Please use a valid format (e.g. +46XX-XXXXXXXX).",
+    "phoneRequiredMessage": "Phonenumber is required",
+    "postalCodeRequiredMessage": "Postal code is required",
+    "proceedLoginPage": "Proceed to the login page",
+    "rememberMe": "Remember me",
+    "resetPasswordMessage": "Reset account password",
+    "resetPasswordMessageDescription": "Enter a new password",
+    "save": "Save",
+    "saveButtonLabel": "Save",
+    "showLess": "Show Less",
+    "showMore": "Show More",
+    "submit": "Submit",
+    "subtitle": "Enter your details below",
+    "technicalErrorMessage": "Technical issue",
+    "termsRequiredMessage": "Terms is required",
+    "title": "Sign in to {{company}}",
+    "welcome": "Hi, Welcome back"
+  },
+  "inventory": {
+    "addButtonLabel": "Add product",
+    "cancelButtonLabel": "Cancel",
+    "deleteDialogTextContent": "Are you sure you want to delete this item?",
+    "deleteDialogTitle": "Confirm delete",
+    "editButtonLabel": "Edit",
+    "editCategoriesLabel": "Edit categories",
+    "fetchError": "Unable to load data. Please wait a moment and try again.",
+    "filterButtonLabel": "Category",
+    "filterLabel": "Filter and Sort",
+    "formErrorCategory": "Category is required",
+    "formErrorMessage": "An unknown error has occurred. Please try again later",
+    "formErrorName": "Name is required",
+    "general": "General",
+    "helperTextQuantityPerPallet": "There are {{ count }} pallet in stock containing products",
+    "helperTextQuantityPerPallet_plural": "There are {{ count }} pallets in stock containing products",
+    "imagePreviewLabel": "Preview",
+    "include_children": "Incl. desc.",
+    "labelBrand": "Brand",
+    "labelCategories": "All Categories",
+    "labelCategory": "Category",
+    "labelCreated": "Created",
+    "labelDescription": "Description",
+    "labelImage": "Image",
+    "labelName": "Name",
+    "labelOffers": "Offers",
+    "labelPallet": "Pallet location",
+    "labelPicking": "Picking location",
+    "labelProductCategories": "Product categories",
+    "labelProductData": "Product data",
+    "labelProductID": "Product ID",
+    "labelProductImage": "Product image",
+    "labelProductInformation": "Product information",
+    "labelProductTags": "Product tags",
+    "labelQuantity": "Quantity",
+    "labelQuantityPerPallet": "Quantity per pallet",
+    "labelSku": "SKU (Stock keeping unit)",
+    "labelSupplier": "Supplier",
+    "labelTags": "Tags",
+    "labelThreshold": "Low stock threshold",
+    "labelUnitCode": "Unit",
+    "latest": "Latest",
+    "maxValue": "{{field}} must be less than or equal to {{max}}",
+    "noImage": "No image",
+    "noSearchResultsFound": "No search results found",
+    "removeFilterLabel": "Clear filter",
+    "rowsPerPageLabel": "Rows per page",
+    "stockManagement": "Inventory",
+    "tablePaginationOf": "of",
+    "tagPlaceholder": "Type and press enter",
+    "title": "My products",
+    "unSavedChanges": "Changes that you made may not be saved.",
+    "updateButtonLabel": "Update",
+    "uploadButtonLabel": "Upload image"
+  },
+  "landing": {
+    "footer": {
+      "contactText": "Contact information"
+    },
+    "heroLayout": {
+      "contactButtonLabel": "Get in touch",
+      "subText": "Optimize your business with our revolutionary purchasing management and order management system! Streamline, automate and simplify your business process for maximum productivity and profitability.",
+      "systemText": "order management system"
+    },
+    "processBox": {
+      "step1": {
+        "bodyText": "Establish collaborations with the companies you already collaborate with today and then put the system into use together. This step will strengthen your collaborations and optimize your business.",
+        "title": "Partnership"
+      },
+      "step2": {
+        "bodyText": "By integrating existing products into the system, you create efficiency and open opportunities for growth. It provides competitive advantages and improved customer service.",
+        "title": "Add and edit products"
+      },
+      "step3": {
+        "bodyText": "Get started registering, packing and managing orders smoothly in the system. This will streamline your order process and increase your productivity.",
+        "title": "Order processing"
+      },
+      "step4": {
+        "bodyText": "Simply tick off the delivered orders in the system when they have been sent. This gives you a better overview of delivery status and streamlines your inventory management.",
+        "title": "Delivery"
+      }
+    },
+    "screenshotBox": {
+      "listText": "Create and manage orders",
+      "listText2": "Access to current article registers",
+      "listText3": "With Tieraid work orders, you get full control of all ongoing and executed orders",
+      "title": "Smoother order handling with Tieraid"
+    }
+  },
+  "language": {
+    "danish": "Danish",
+    "english": "English",
+    "finnish": "Finnish",
+    "norwegian": "Norwegian",
+    "swedish": "Swedish"
+  },
+  "marketplace": {
+    "errorSupplierFetch": "Products could not be retrieved",
+    "productPage": {
+      "backButton": "Back to products",
+      "inStock": "In stock",
+      "modalButton": "Settings",
+      "outOfStock": "Out of Stock",
+      "productAccessLabel": "Product Access",
+      "productErrorMessage": "Sorry we could not provide any product information at the moment, please try again later.",
+      "productErrorTitle": "Product not found",
+      "productRoleDescription": "View all roles and their respective permissions for the selected product",
+      "productRolePermissionErrorMessage": "Sorry we could not change any product permissions at the moment, please try again later",
+      "productRolePermissionLabel": "Manage Product Permission",
+      "quantityUnit": "pc",
+      "roleErrorMessage": "Sorry we could not provide any roles at the moment, please try again later. Please check that roles exist under settings > users.",
+      "roleErrorTitle": "Roles not found",
+      "roles": "Roles",
+      "stockStatus": "Product Availability"
+    },
+    "supplierFetchError": "Technical issue",
+    "title": "Available products"
+  },
+  "orders": {
+    "cancelOrderButtonLabel": "Cancel Order",
+    "cancelOrderErrorMessage": "Unfortunately, we were unable to cancel your order right now.",
+    "cancelOrderErrorTitle": "Cancellation Unsuccessful",
+    "cancelOrderSuccessMessage": "Your order has been successfully cancelled.",
+    "cancelOrderSuccessTitle": "Order Cancelled",
+    "cancelled": "Cancelled",
+    "completed": "Completed",
+    "createBackorderButtonLabel": "Create Backorder",
+    "createBackorderErrorMessage": "Backorder could not be created. It may be because the quantity is too low.",
+    "createBackorderSuccessMessage": "Back order created with order number",
+    "created": "Created",
+    "customerLabel": "Customer",
+    "delivered": "Delivered",
+    "deliveredOrderButtonLabel": "Order Delivered",
+    "descriptionLabel": "Message from customer",
+    "dialog": {
+      "cancelButtonText": "Cancel",
+      "confirmButtonText": "Confirm",
+      "content": "Are you sure you want to cancel the order?",
+      "title": "Cancel Order"
+    },
+    "editOrderButtonLabel": "Edit Order",
+    "emptyBackorderInfoMessage": "Unfortunately, it is not possible to create a backorder based on the current order.",
+    "emptyBackorderInfoTitle": "The order must not be empty",
+    "fetchOrderErrorMessage": "Unfortunately, we are currently unable to retrieve your orders at the moment, please try again later.",
+    "fetchOrderErrorTitle": "Technical issue",
+    "open": "Open",
+    "orderDateLabel": "Date",
+    "orderDetailLabel": "Order details",
+    "orderNumberLabel": "Order #",
+    "orderProcessingLabel": "Order Processing",
+    "orderShippedLabel": "Order Shipped",
+    "partner": "Partner",
+    "printLabel": "Print Order",
+    "processing": "Processing",
+    "product": "Product",
+    "productHeading": "Products",
+    "products": "",
+    "products_plural": "",
+    "rest": "Rest",
+    "rolesLabel": "Role",
+    "searchOrderPlaceholder": "Search for order ID, description or order status...",
+    "shipped": "Shipped",
+    "statusLabel": "Status",
+    "subtractOriginalOrderLabel": "Subtract from the original order",
+    "title": "Your orders"
+  },
+  "partner": {
+    "activePartner": "Active",
+    "addPartner": "Add partner",
+    "description": "",
+    "emptyOrgNumber": "Organization number is required",
+    "fetchPartnerErrorTitle": "No partner is found",
+    "inactivePartner": "Inactive",
+    "invalidOrgNumber": "Organization number is invalid, format 771122-1234",
+    "partnerDefaultErrorMessage": "The partner could not be added. This may be because the organization number is incorrect or because the partner does not allow requests.",
+    "partnerErrorTitle": "Unfortunately, partner could not be added",
+    "partnerLoading": "Searching for a partner. Hang tight!",
+    "partnerNotFoundErrorMessage": "Unfortunately, any partner could not be found",
+    "title": "Partner"
+  },
+  "partnership": {
+    "agreements": "Partners",
+    "assortment": {
+      "description": "Set assortment that this partner should have access to, it indicates that products that will be available",
+      "title": "Available assortment"
+    },
+    "create": "Add partner",
+    "order": {
+      "statistic": {
+        "description": "Here you can get a summary on how many products that are ordered (default period is set to current month)",
+        "item": {
+          "brand": "Brand",
+          "count": "Quantities",
+          "delivered_count": "Delivered",
+          "id": "Product id",
+          "name": "Product name",
+          "orders_count": "Orders"
+        },
+        "orderFromDate": "Order from",
+        "orderToDate": "Order to",
+        "title": "Order statistic"
+      }
+    },
+    "products": {
+      "description": "Here are all available products that can be seen by your partner",
+      "exportCsv": "Export to CSV file",
+      "none": "There are no available products",
+      "title": "Available products"
+    },
+    "settings": {
+      "customer": {
+        "description": "All the settings you can make as a customer against your partner are listed here",
+        "populateRolesInAllOrdersHelperText": "The user's role will be included in the message when ordering",
+        "populateRolesInAllOrdersLabel": "Add roles to orders"
+      },
+      "description": "Settings that you can set as supplier for this partnership",
+      "showStockInformationHelperText": "When active available products quantity will be shown",
+      "showStockInformationLabel": "Show stock available quantity",
+      "title": "Settings"
+    },
+    "title": "Partner"
+  },
+  "password": {
+    "request_reset_error": "We are having trouble sending you a password reset, place try again in a little bit.",
+    "request_reset_sent": "We've sent a password reset to your email.",
+    "reset_error": "We are having trouble resetting your password, place try again in a little bit.",
+    "reset_sent": "Your password has been successfully reset."
+  },
+  "profile": {
+    "accountInformationError": "Unfortunately, the profile could not be updated, please try again later.",
+    "changePasswordHeading": "Change your password",
+    "defaultName": "User",
+    "modalHeading": "Profile picture",
+    "removePictureButton": "Remove",
+    "security": "Security",
+    "title": "Profile",
+    "updatePasswordButton": "Update password",
+    "updatePasswordCurrentIncorrectErrorMessage": "Your current password is wrong, try again.",
+    "updatePasswordErrorDefaultMessage": "Unfortunately, the password could not be updated, please try again later.",
+    "updatePasswordErrorHeading": "Password could not be changed!",
+    "updatePasswordSuccessDefaultMessage": "Your password has been changed successfully.",
+    "updatePasswordSuccessHeading": "Password Changed!",
+    "updateProfileButton": "Update profile",
+    "uploadPictureButton": "Upload picture"
+  },
+  "settings": {
+    "guest": {
+      "description": "Enable this to give guest users the ability to view products and add to cart and place orders. The guest page can be reached by visiting url ",
+      "guestAccessLabel": "Allow guest checkout",
+      "guestImageLabel": "Show company logo",
+      "infoMessageNoRoles": "Add a role to enable this functionality",
+      "message": "Information message to guest user",
+      "roleDescription": "Set a role that guest user has to show visible products",
+      "roleLabel": "Guest role"
+    },
+    "title": "Settings"
+  },
+  "statistic": {
+    "categories": "Accessible category",
+    "categories_plural": "Accessible categories",
+    "order": "Order",
+    "order_plural": "Orders",
+    "products": "Product",
+    "products_plural": "Products"
+  },
+  "stock": {
+    "available": "Stock: {{count}} qty",
+    "availablePackages": "Stock: {{count}} package",
+    "availablePackages_plural": "Stock: {{count}} packages",
+    "available_plural": "Stock: {{count}} qty",
+    "unavailable": "Unavailable"
+  },
+  "supplier": {
+    "fetchOrderErrorTitle": "Technical issue",
+    "incomingOrders": "Incoming orders",
+    "management": "Manage",
+    "updateOrderErrorMessage": "Unfortunately we're unable to update your order right now. Please try again later.",
+    "updateOrderErrorTitle": "Order could not be updated",
+    "updateOrderSuccessMessage": "Your order has now been successfully updated.",
+    "updateOrderSuccessTitle": "Order updated successfully!"
+  },
+  "theme": {
+    "dark": "Dark",
+    "light": "Light"
+  },
+  "todo": {
+    "empty_description": "Kudos to you!",
+    "empty_title": "All todos done",
+    "type": {
+      "info_title": "Message",
+      "order_new_description": "There is a new order for you to handle",
+      "order_new_title": "New order"
+    }
+  },
+  "unitCode": {
+    "H87": "Piece",
+    "XPK": "Package"
+  },
+  "users": {
+    "addUserError": "User could not be added, please try again later",
+    "cancelInvite": "Cancel",
+    "deleteConfirmationMessage": "Are you sure you want to delete user?",
+    "deleteLabel": "Delete user",
+    "deleteUserError": "User could not be removed, please try again later",
+    "editGroups": "Manage groups",
+    "editRoles": "Manage roles",
+    "emptyRolesDescription": "No roles available",
+    "getUsersError": "Users could not be retrieved, please try again later",
+    "groupsDescription": "These groups that exist are used to control the rights a user has based on API calls and are global in tieraid, and it's not possible to add new ones.",
+    "groupsLabel": "Groups",
+    "guestAccessLabel": "Guest access",
+    "inviteUserButton": "Submit",
+    "inviteUserEmailPlaceholder": "Email address",
+    "inviteUserTab": "Invite User",
+    "inviteUsers": "Invite a team member",
+    "manageMembersText": "Manage members",
+    "members": "Members",
+    "membersText": "Type an email of an user you want to invite",
+    "pendingInvites": "Pending invites",
+    "pendingInvitesDetailText": "Users that have not responded to your invitation",
+    "resendInvite": "Resend invite",
+    "rightsLabel": "User rights",
+    "roleDescription": "Description",
+    "roleLabel": "Name",
+    "rolesAddNew": "Add new role",
+    "rolesDelete": "Delete role",
+    "rolesDescription": "Create new roles that you can reuse in the company",
+    "rolesEdit": "Edit role",
+    "rolesLabel": "Roles",
+    "rolesRemovalConfirmButton": "Remove the role",
+    "rolesRemovalQuestion": "Are you sure that you want to removal the role?",
+    "search": "Search user",
+    "title": "Users",
+    "verifiedLabel": "Verified"
+  }
+}
